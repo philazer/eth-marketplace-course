@@ -12,7 +12,7 @@ export default function ActiveLink({children, activeLinkClass, ...props}) {
   }
 
   return (
-    <Link {...props}>
+    <Link legacyBehavior {...props}>
       {
         React.cloneElement(children, {className})
       }

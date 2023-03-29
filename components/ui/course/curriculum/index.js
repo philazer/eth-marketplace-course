@@ -64,7 +64,7 @@ export default function Curriculum({locked, courseState, isLoading}) {
                           locked ?
                             <>
                               { courseState === "deactivated" &&
-                                <Link href="/marketplace">
+                                <Link legacyBehavior href="/marketplace">
                                   <a
                                     className="text-indigo-600 hover:text-indigo-900">
                                     Get Access
@@ -72,7 +72,7 @@ export default function Curriculum({locked, courseState, isLoading}) {
                                 </Link>
                               }
                               { courseState === "purchased" &&
-                                <Link href="/faq">
+                                <Link legacyBehavior href="/faq">
                                   <a
                                     className="text-yellow-500 hover:text-yellow-900">
                                     Waiting for activation...
@@ -80,7 +80,7 @@ export default function Curriculum({locked, courseState, isLoading}) {
                                 </Link>
                               }
                             </> :
-                            <Link href="/watch">
+                            <Link legacyBehavior href="/watch">
                               <a
                                 className="text-indigo-600 hover:text-indigo-900">
                                 Watch
